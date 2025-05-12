@@ -7,6 +7,12 @@ broj varchar(10),
 kupac varchar(100)
 );
 
+4. create table proizvodi(
+sifra int,
+naziv varchar(100)
+cijena decimal(18,2)
+);
+
 
 
 
