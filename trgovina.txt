@@ -1,0 +1,12 @@
+1. create database trgovina; 
+2. use trgovina;
+
+3. create table racuni(
+sifra int,
+broj varchar(10),
+kupac varchar(100)
+);
+
+
+
+
