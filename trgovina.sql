@@ -14,8 +14,8 @@
 --cijena decimal(18,2)
 --);
 
-create table stavke(
-racun int,
-proizvod int,
-kolicina decimal(5,3)
-);
+--create table stavke(
+--racun int,
+--proizvod int,
+--kolicina decimal(5,3)
+--);
