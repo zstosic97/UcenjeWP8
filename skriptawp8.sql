@@ -18,3 +18,18 @@
 --smjer int,
 --predavac varchar(50)
 --);
+
+--drop table polaznici;
+
+--create table polaznici(
+--sifra int,
+--ime varchar(50),
+--prezime varchar(50),
+--email varchar(100)
+--);
+
+
+--create table clanovi(
+--grupa int,
+--polaznik int
+--);
