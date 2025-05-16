@@ -9,13 +9,13 @@ go
 use knjizara;
 
 Create table clanovi(
-sifra int,
-clbroj int
+sifra int not null primary key identity(1,1),
+clbroj int not null
 );
 
 create table vlasnici(
-sifra int,
-knjiga int
+sifra int not null primary key identity(1,1),
+knjiga int 
 );
 
 create table knjige(

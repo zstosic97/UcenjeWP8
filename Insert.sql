@@ -1,45 +1,6 @@
-﻿--create database edunovawp8;
-use master;
-go
-drop database if exists edunovawp8;
-go
-create database edunovawp8 collate Croatian_CI_AS;
-go
+﻿use edunovawp8;
 
---drop database edunovawp8;
-
-use edunovawp8;
-
-create table smjerovi(
-sifra int not null primary key identity(1,1),
-naziv varchar(50) not null,
-cijena decimal(18,2) null, --null se ne mora pisati
-datumpokretanja datetime, --i ovo je null iako ne pise
-aktivan bit not null default 0 
-);
-
-create table grupe(
-sifra int not null primary key identity(1,1),
-naziv varchar(20),
-smjer int not null references smjerovi(sifra),
-predavac varchar(50)
-);
-
---drop table polaznici;
-
-create table polaznici(
-sifra int not null primary key identity(1,1),
-ime varchar(50) not null,
-prezime varchar(50) not null,
-email varchar(100)
-);
-
-
-create table clanovi(
-grupa int not null references grupe(sifra),
-polaznik int not null references polaznici(sifra)
-);
-
+select * from polaznici;
 
 --1   ->ovo je šifra koju će dodijeliti baza
 insert into smjerovi (naziv,cijena,datumpokretanja, aktivan)
@@ -94,6 +55,7 @@ insert into polaznici (prezime, ime, email) values
 ('Mirković','Milivoje','daky696@gmail.com'),
 ('Andraković','Nenad','nenad.andrak@gmail.com');
 
+select * from clanovi;
 
 insert into clanovi (grupa,polaznik) values
 (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12),(1,13),(1,14),(1,15),(1,16),
