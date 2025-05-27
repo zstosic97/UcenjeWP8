@@ -13,10 +13,7 @@ Create table prodavatelji(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
 adresasjedista varchar(50) not null,
-mjesto varchar(50) not null,
-oib varchar(20) not null,
 email varchar(50) not null,
-datumupisa datetime not null
 );
 
 
@@ -45,10 +42,7 @@ create table kupci(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
 adresasjedista varchar(50) not null,
-mjesto varchar(50) not null,
-oib varchar(20) not null,
 email varchar (50) not null,
-datumupisa datetime not null
 );
 
 create table narudzbe(
