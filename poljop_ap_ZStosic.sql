@@ -91,3 +91,9 @@ VALUES
 ('2025-05-27', 1), 
 ('2025-05-28', 3);
 
+INSERT INTO stavkanarudzbe (kolicina, narudzba, proizvod)
+VALUES 
+(500.000, 1, 1),
+(300.000, 1, 2),
+(200.000, 2, 3), 
+(150.000, 3, 1);
