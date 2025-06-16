@@ -2,7 +2,12 @@
 using Ucenje;
 
 
-E10ForEach.Izvedi(); 
+E11Z02.Izvedi(); 
+//E13Rekurzija.Izvedi();
+//E12Metode.Izvedi();
+//E11Z01.Izvedi();
+//E11TryCatch.Izvedi();
+//E10ForEach.Izvedi(); 
 //E09DoWhile.Izvedi();
 //E08WhilePetlja.Izvedi();
 //E07ForPetlja.Izvedi();
