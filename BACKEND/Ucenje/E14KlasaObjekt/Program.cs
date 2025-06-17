@@ -1,5 +1,8 @@
 ﻿
 
+using System.Buffers;
+using System.Security.Cryptography.X509Certificates;
+
 namespace Ucenje.E14KlasaObjekt
 {
     internal class Program
@@ -31,7 +34,7 @@ namespace Ucenje.E14KlasaObjekt
             osoba.DatumRodenja = new DateTime(
                 Pomocno.ucitajCijeliBroj("Unesi godinu rođenja"),
                 Pomocno.ucitajCijeliBroj("Unesi mjesec rođenja"),
-                Pomocno.ucitajCijeliBroj("Unesi dan rođenja"
+                Pomocno.ucitajCijeliBroj("Unesi dan rođenja")
                 );
 
 
@@ -63,7 +66,53 @@ namespace Ucenje.E14KlasaObjekt
                 Console.WriteLine(o.Ime);
             }
 
+            // Ovdje je Mjesto na osoba null
+            Console.WriteLine(osoba.Mjesto?.Naziv ?? "Nije postavljeno");
+
+            // ovdje na osoba dodjeljujem Mjesto na novu instancu klase mjesto s vrijednočću naziva Osijek
+            osoba.Mjesto = new() { Naziv = "Osijek" };
+           
+            // Ovdje Mjesto nije null i naziv je postavljen
+            Console.WriteLine(osoba.Mjesto?.Naziv ?? "Nije postavljeno");
+
+
+
+            osoba.Ime = "Pero";
+
+            osoba.Mjesto.Zupanija = new Zupanija() { Naziv = "OBŽ", Zupan = new() { Ime = "Nataša" } };
+
+            // Koji je smisao OOP-a 
+
+            Console.WriteLine(osoba.Mjesto.Zupanija.Zupan.Ime);
+
+
+            // ispisati Pero s objekta osoba
+            Console.WriteLine(osoba.Ime);
+
+            // ispisati OBŽ s objekta osoba
+            Console.WriteLine(osoba.Mjesto?.Zupanija.Naziv);
+
+            //ispšisati Osijek s objekta osoba
+            Console.WriteLine(osoba.Mjesto?.Naziv);
+
+
+            // Zadatak: 
+            // Kreirati klasu Automobil s 5 svojstava 
+
+          public static void AutomobilZadatak()
+            {
+            Automobil automobil = new Automobil();
+            automobil.Sifra = 1;
+            automobil.Marka = "Mercedes";
+            automobil.Automatik = false;
+            automobil.DatumProizvodnje = new DateTime(1991, 11, 1);
+            automobil.Cijena = 14525.20M;
+
+            Console.WriteLine(automobil.DatumProizvodnje);
+
+            }
+
         }
 
     }
-}
+

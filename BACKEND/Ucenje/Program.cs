@@ -2,8 +2,11 @@
 using Ucenje;
 
 
+Ucenje.E14KlasaObjekt.Program.AutomobilZadatak();
+
+
 //ključna riječ new poziva konstruktor klase
-new Ucenje.E14KlasaObjekt.Program();
+//new Ucenje.E14KlasaObjekt.Program();
 //E11Z02.Izvedi(); 
 //E13Rekurzija.Izvedi();
 //E12Metode.Izvedi();
