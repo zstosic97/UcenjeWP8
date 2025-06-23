@@ -30,6 +30,8 @@ namespace Ucenje.E16Polimorfizam
             var r = new Ravnatelj();
             r.Log("Ravnatelj je izuzet");
 
+            r.Log("Ravnatelj je izuzet");
+
         }
 
         public static void Ispisi(Osoba[] osobe)
