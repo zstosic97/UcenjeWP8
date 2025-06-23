@@ -11,7 +11,7 @@ namespace Ucenje.E14KlasaObjekt.edunova.Zavrsni
     {
         public int Sifra { get; set; }
         public string Naziv { get; set; } = "";
-        public string AdresaSjedista { get; set; };
+        public string AdresaSjedista { get; set; }
         public string email { get; set; }
     }
 }

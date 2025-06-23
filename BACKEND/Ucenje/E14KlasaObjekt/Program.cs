@@ -22,8 +22,8 @@ namespace Ucenje.E14KlasaObjekt
 
             // postavljanje vrijednosti ta svojstva objekta
             osoba.Sifra = 1; // pozvao si setter (učahurivanje)
-            //osoba.Ime = "Pero"; namjerno ime ostavljamo null jer ono može biti null (? smo stavili)
-                osoba.Prezime = "Perić";
+                             //osoba.Ime = "Pero"; namjerno ime ostavljamo null jer ono može biti null (? smo stavili)
+            osoba.Prezime = "Perić";
             osoba.DatumRodenja = new DateTime(1980, 12, 7);
 
 
@@ -41,7 +41,7 @@ namespace Ucenje.E14KlasaObjekt
             // Korištenje virjednosti svojstava
             Console.WriteLine(osoba.Prezime); // pozvao si getter (učahurivanje)
 
-            Console.WriteLine(osoba.Ime??""); // ime može biti null, stoga ?? znači što će biti ako je null. Konkretno ko je ima null, ispiši prazno
+            Console.WriteLine(osoba.Ime ?? ""); // ime može biti null, stoga ?? znači što će biti ako je null. Konkretno ko je ima null, ispiši prazno
 
 
             // ne statična metoda se zove s objekta 
@@ -50,7 +50,8 @@ namespace Ucenje.E14KlasaObjekt
             Osoba[] osobe = new Osoba[3];
 
             // skraćeni oblik postavljanja vrijednosti svojstava
-            osobe[0] = new Osoba() {
+            osobe[0] = new Osoba()
+            {
                 Ime = "Marija",
                 Prezime = "Kat",
                 Sifra = 2,
@@ -59,10 +60,10 @@ namespace Ucenje.E14KlasaObjekt
 
             osobe[1] = new() { Ime = "Ante" };
 
-            osobe[2] = osoba; 
+            osobe[2] = osoba;
 
-            foreach(Osoba o in osobe)
-                {
+            foreach (Osoba o in osobe)
+            {
                 Console.WriteLine(o.Ime);
             }
 
@@ -71,7 +72,7 @@ namespace Ucenje.E14KlasaObjekt
 
             // ovdje na osoba dodjeljujem Mjesto na novu instancu klase mjesto s vrijednočću naziva Osijek
             osoba.Mjesto = new() { Naziv = "Osijek" };
-           
+
             // Ovdje Mjesto nije null i naziv je postavljen
             Console.WriteLine(osoba.Mjesto?.Naziv ?? "Nije postavljeno");
 
@@ -99,8 +100,10 @@ namespace Ucenje.E14KlasaObjekt
             // Zadatak: 
             // Kreirati klasu Automobil s 5 svojstava 
 
+            AutomobilZadatak();
+        }
           public static void AutomobilZadatak()
-            {
+        {
             Automobil automobil = new Automobil();
             automobil.Sifra = 1;
             automobil.Marka = "Mercedes";
@@ -110,9 +113,9 @@ namespace Ucenje.E14KlasaObjekt
 
             Console.WriteLine(automobil.DatumProizvodnje);
 
-            }
-
         }
 
     }
+
+}
 

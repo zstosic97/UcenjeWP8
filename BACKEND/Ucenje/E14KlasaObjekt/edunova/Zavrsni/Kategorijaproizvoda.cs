@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Ucenje.E14KlasaObjekt.edunova.Zavrsni
 {
-    internal class Kategorijaproizvoda
+    public class Kategorijaproizvoda
     {
+        public int Sifra { get; set; }
+        public string NazivKategorije { get; set; } = "";
+
     }
 }

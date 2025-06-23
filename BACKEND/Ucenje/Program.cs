@@ -2,7 +2,9 @@
 using Ucenje;
 
 
-Ucenje.E14KlasaObjekt.Program.AutomobilZadatak();
+new Ucenje.E15Nasljedivanje.Program();
+
+//Ucenje.E14KlasaObjekt.Program.AutomobilZadatak();
 
 
 //ključna riječ new poziva konstruktor klase
