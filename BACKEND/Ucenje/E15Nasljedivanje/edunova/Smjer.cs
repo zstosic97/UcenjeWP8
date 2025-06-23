@@ -1,11 +1,10 @@
 ﻿
 
-namespace Ucenje.E14KlasaObjekt.edunova
+namespace Ucenje.E15Nasljedivanje.edunova
 {
-    public class Smjer
+    public class Smjer : SvojstvoNaziv
     {
-        public int Sifra { get; set; }
-        public string Naziv { get; set; } = ""; 
+     
         public decimal Cijena { get; set; }
         public DateTime? DatumPokretanja { get; set; }
         public bool Aktivan { get; set; }

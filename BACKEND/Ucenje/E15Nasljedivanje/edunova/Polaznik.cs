@@ -1,10 +1,10 @@
 ﻿
 
-namespace Ucenje.E14KlasaObjekt.edunova
+namespace Ucenje.E15Nasljedivanje.edunova
 {
-    public class Polaznik
+    public class Polaznik : Entitet
     {
-        public int Sifra { get; set; }
+      
         public string Ime { get; set; } = "";
         public string Prezime { get; set; } = "";
         public string? Email { get; set; }

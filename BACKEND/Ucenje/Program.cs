@@ -1,8 +1,9 @@
 ﻿
 using Ucenje;
 
+new Ucenje.E16Polimorfizam.Program();
 
-new Ucenje.E15Nasljedivanje.Program();
+//new Ucenje.E15Nasljedivanje.Program();
 
 //Ucenje.E14KlasaObjekt.Program.AutomobilZadatak();
 
